@@ -3,6 +3,9 @@ from datetime import date
 import requests
 from bs4 import BeautifulSoup
 
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
@@ -14,8 +17,9 @@ async def get_afisha_me_films(
 
 
     URL = f"https://afisha.me/day/film/{start_date}/{end_date}/"
-    response = requests.get(URL, headers=HEADERS)
+    response = requests.get(URL, headers=HEADERS, verify=False)
     response.raise_for_status()  # Чтобы не продолжать парсить страницу, если она не загрузилась.
+
     soup = BeautifulSoup(response.text, "html.parser")
     film_links = []
     seen_urls = set()

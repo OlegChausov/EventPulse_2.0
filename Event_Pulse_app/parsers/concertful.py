@@ -51,6 +51,7 @@ async def get_concertful_pl(start_date: date) -> list[dict]:
         time.sleep(1)  # ⏳ пауза между запросами
 
 
+    print(all_events[:10])
     return all_events
 
 

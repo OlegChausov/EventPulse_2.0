@@ -23,7 +23,7 @@
         </div>
     </div>
 
-    <div class="left" style="width:30%">
+    <div class="left" style="width:33%">
       <h3>{{ request.state.t.my_queries}}</h3>
 
       <div id="query-list" hx-get="/profile/query/list" hx-trigger="load" hx-swap="innerHTML"></div>
@@ -39,7 +39,7 @@
       <div id="query-form"></div>
     </div>
 
-    <div class="right" style="width:70%">
+    <div class="right" style="width:67%">
       <h3>{{ request.state.t.my_events}}</h3>
 
       <div id="event-list" hx-get="/profile/events/list" hx-trigger="load" hx-swap="innerHTML"></div>

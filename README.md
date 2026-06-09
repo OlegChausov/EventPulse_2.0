@@ -8,7 +8,24 @@ Concerts in Warsaw and Vilnius
 Instead of constantly checking websites, users can leave a query for a future movie or concert. When such an event is found, the app will:
 - Display it in the event list
 - Send an email notification with a link to buy tickets
-- Users can add or remove queries and events, manage them (stop searching, continue searching, etc.).
+- Users can add or remove queries and events, manage them (stop searching, continue searching, etc.)
+
+🔥 What’s New in EventPulse 2.0
+A major upgrade of the entire backend stack:
+
+- Docker Compose environment
+- Nginx reverse proxy
+- Adminer for database inspection
+- New Selenium-based movie parser for Minsk
+- More reliable than static HTML parsing
+- Nginx gateway
+- Static assets
+- Reverse proxy to FastAPI
+- Production-ready structure
+- Improved architecture & project structure
+- Clear separation of services
+- Faster debugging
+- Better maintainability
 
 🔐 Authentication
 - Registration and login with password (secure, password hashes only, not stored in plain text)
@@ -52,7 +69,24 @@ EventPulse — приложение для отслеживания будущи
 Вместо того чтобы постоянно проверять сайты, пользователь оставляет запрос на фильм или концерт. Когда событие найдено, приложение:
 - Отобразит его в списке событий
 - Отправит уведомление по электронной почте со ссылкой на покупку билета
-- Можно добавлять и удалять запросы и события, управлять ими (больше не искать, искать дальше и т.д.).
+- Можно добавлять и удалять запросы и события, управлять ими (больше не искать, искать дальше и т.д.)
+
+🔥 Что нового в EventPulse 2.0
+Крупное обновление всей серверной архитектуры:
+
+- Docker Compose‑окружение
+- Nginx reverse proxy
+- Adminer для просмотра и анализа базы данных
+- Новый Selenium‑парсер кино в Минске
+- Более надёжный парсинг динамических страниц по сравнению со статическим HTML
+- Nginx‑шлюз
+- Раздача статических файлов
+- Проксирование запросов к FastAPI
+- Продакшен‑готовая структура проекта
+- Улучшенная архитектура и структура кода
+- Чёткое разделение сервисов
+- Быстрая отладка
+- Лучшая поддерживаемость
 
 🔐 Авторизация
 - Регистрация и вход по паролю (безопасно, хранится только хэш)

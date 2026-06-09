@@ -9,7 +9,7 @@ TEMPLATES_DIR = BASE_DIR / "templates"
 STATIC_DIR = BASE_DIR / "static"
 IMAGES_DIR = STATIC_DIR / "images"
 
-PARSER_REFRESH_INTERVAL_SECONDS = 20 * 60
+PARSER_REFRESH_INTERVAL_SECONDS = 1 * 1 * 60
 
 SEMI_PUBLIC_PATHS = ["/events", "/concerts", "/login", "/login",]
 PUBLIC_PATHS = [
@@ -19,7 +19,8 @@ PUBLIC_PATHS = [
     "/test-parse-all",
     "/ping",
     "/docs",
-    "/openapi.json"
+    "/openapi.json",
+    "/debug/events"
 ]
 
 
