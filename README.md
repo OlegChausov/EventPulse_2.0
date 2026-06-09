@@ -121,7 +121,7 @@ EventPulse — приложение для отслеживания будущи
 EventPulse распространяется свободно под лицензией MIT License. Вы можете использовать, изменять и распространять приложение при условии сохранения уведомления об авторских правах и текста лицензии.
 
 
-## Screenshots
+## Скриншоты
 ![Screeshots of app](assets/img/1.png)
 ![Screeshots of app](assets/img/2.png)
 ![Screeshots of app](assets/img/3.png)
